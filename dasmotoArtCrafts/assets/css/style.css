@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+div h3,
+h1,
+div h2,
+div span {
+  font-weight: 700;
+}
+
+h2,
+h3,
+p {
+  margin: 2rem 0;
+}
+
+h1 {
+  background-image: url(../imgs/pattern.jpeg);
+  color: #f0e68c;
+  font-size: 10rem;
+  text-align: center;
+}
+
+header,
+main {
+  margin: 5rem 1rem;
+}
+
+div h2 {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+div h3 {
+  font-size: 2rem;
+}
+
+div span {
+  color: #0000ff;
+}
+
+div p {
+  font-size: 1.6rem;
+}
+
+div.brushes h2 {
+  background-color: #3cb371;
+}
+
+div.frames h2 {
+  background-color: #f08080;
+}
+
+div.paint h2 {
+  background-color: #87ceeb;
+}
