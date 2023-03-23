@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: azure;
+}
+
+h1,
+h2,
+thead td {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: darkcyan;
+  font-weight: 700;
+}
+
+article h2 {
+  font-weight: 400;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+table {
+  border: 3px double darkslateblue;
+  margin: 0 auto;
+}
+
+table td {
+  border: 1px solid darkslateblue;
+  padding: 1rem 2rem;
+  color: midnightblue;
+  text-align: center;
+}
+
+thead td {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+tbody td {
+  font-size: 1.4rem;
+  font-family: 'Mynerve', cursive;
+  font-weight: 400;
+}
+
+td code {
+  background-color: antiquewhite;
+  font-weight: 400;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+}
