@@ -1,0 +1,185 @@
+/* Common */
+* {
+  color: #fff5ee;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+}
+
+html {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+p,
+figcaption {
+  opacity: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Header */
+
+.header {
+  background-color: #000;
+  border-bottom: 1px solid #fff5ee;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-img {
+  max-height: 50px;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Content - Mission*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 69px;
+  z-index: 1;
+}
+.mission {
+  background-image: url(../images/img-mission-background.jpg);
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mission-container {
+  background-color: #000;
+  width: 100%;
+  font-weight: 700;
+  opacity: 1;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Content - Featured*/
+.featured {
+  padding-top: 3.5rem;
+}
+
+.featured-title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.featured-title h2 {
+  margin-bottom: 1rem;
+}
+
+.featured-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  text-align: center;
+  font-weight: 700;
+}
+
+.gallery-item img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* Content - Locations*/
+.locations {
+  background-image: url(../images/img-locations-background.jpg);
+  background-position: top;
+  height: 600px;
+  margin-top: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.locations-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.locations-gallery div {
+  margin-top: 15px;
+  opacity: 1;
+  background-color: #000;
+}
+
+.locations-gallery address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 300px;
+  padding: 1rem 0.3rem;
+  font-style: normal;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 85px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 200px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer-copy {
+  text-align: left;
+  padding: 20px;
+  font-weight: 700;
+}
