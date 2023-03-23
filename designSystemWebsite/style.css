@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: square;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: rgb(235, 243, 235);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #151f15;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+h2,
+.op-1:hover::after,
+.op-2:hover::after,
+.op-3:hover::after {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.op-1::after,
+.op-2::after,
+.op-3::after {
+  font-weight: 700;
+  color: #40ff00;
+  opacity: 0;
+}
+
+.op-1:hover::after,
+.op-2:hover::after,
+.op-3:hover::after {
+  opacity: 1;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  border: 4px double rgb(181, 223, 176);
+  box-shadow: 3px 3px 1px 0 rgba(138, 212, 130, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+section + section {
+  margin-top: 1rem;
+}
+
+.container-colors {
+  display: flex;
+  width: 80%;
+  height: 200px;
+  column-gap: 2rem;
+}
+
+.container-colors div {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+}
+
+/* Cores */
+.cor1 {
+  background-color: #455644;
+}
+
+.cor2 {
+  background-color: #76003b;
+}
+
+.cor3 {
+  background-color: #9cf8d4;
+}
+
+.op-1 {
+  position: relative;
+}
+
+.op-2 {
+  position: relative;
+  filter: contrast(150%);
+}
+
+.op-3 {
+  filter: contrast(300%);
+  position: relative;
+}
+
+.op-1:hover::after {
+  content: '0%';
+}
+
+.op-2:hover::after {
+  content: '150%';
+}
+
+.op-3:hover::after {
+  content: '300%';
+}
+.op-1:hover::after {
+  position: absolute;
+  left: 145px;
+  top: 15px;
+}
+.op-2:hover::after,
+.op-3:hover::after {
+  position: absolute;
+  left: 130px;
+  top: 15px;
+}
+
+/* Fonts */
+
+.container-fonts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.container-fonts p {
+  line-height: 1.18;
+  margin-top: 10px;
+}
+
+.container-fonts h3 {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.container-fonts h3::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  background-color: rgb(181, 223, 176);
+  transition: 0.5s;
+}
+
+.container-fonts h3:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.b {
+  font-weight: 700;
+}
+
+.i {
+  font-style: italic;
+}
+
+.serif {
+  font-family: 'Crimson Text', serif;
+}
+
+.sans-serif {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.handwriting {
+  font-family: 'Indie Flower', cursive;
+}
+
+.display {
+  font-family: 'Rubik Iso', cursive;
+}
+
+.monospace {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Text styles */
+.text-styles {
+  padding: 1rem;
+}
+.text-h1,
+.text-h2,
+.text-p {
+  margin-bottom: 10px;
+}
+
+.text-h2,
+.text-p {
+  margin-top: 20px;
+}
+
+.text-styles li {
+  line-height: 1.5;
+}
+
+.text-h1 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.text-h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.text-p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-title {
+  margin-bottom: 1.2rem;
+}
