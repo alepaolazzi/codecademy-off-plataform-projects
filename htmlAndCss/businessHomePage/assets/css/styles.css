@@ -1,0 +1,273 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  color: #212121;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mission,
+.differential,
+.team {
+  display: grid;
+  grid-template-columns: 8% 1fr 8%;
+}
+
+.mission-container,
+.differential-container,
+.team-container {
+  grid-column: 2;
+}
+
+/* Header */
+.header {
+  background-color: #c8c8c8;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 8%;
+}
+
+.header h2 {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-list a {
+  font-size: 1.2rem;
+}
+
+.navigation-list a:hover {
+  color: #5d5d5d;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px) {
+  .mission,
+  .differential,
+  .team {
+    grid-template-columns: 1fr;
+  }
+  .mission-container,
+  .differential-container,
+  .team-container {
+    grid-column: 1;
+  }
+  .header-container {
+    padding: 2% 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+}
+
+/* Main */
+.main {
+  position: relative;
+  top: 5.5rem;
+  z-index: 1;
+}
+
+/* Main - mission */
+.mission {
+  height: 30rem;
+  background-color: #ebebeb;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission h1 {
+  font-size: 4rem;
+  margin: 2% 0;
+}
+
+.mission p {
+  max-width: 70%;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 0 auto;
+}
+
+/* Main - differential */
+.differential {
+  background-color: #dedede;
+}
+
+.differential-container {
+  padding: 8% 0;
+}
+
+.differential-container h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4%;
+}
+
+.differential-list {
+  display: flex;
+  gap: 10px 0;
+  padding: 2% 0;
+}
+
+.differential-list li {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1%;
+}
+
+.differential-list h3 {
+  font-size: 1.1rem;
+}
+
+.differential-list img {
+  object-fit: cover;
+  height: 12rem;
+  border-radius: 4px;
+}
+
+.differential-list p {
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .differential-list img {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .differential-list {
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* Main - team */
+.team {
+  background-color: #ebebeb;
+}
+
+.team-container {
+  padding: 8% 0;
+}
+
+.team-container h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4%;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list figcaption {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  .team-list {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .team-list {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* footer */
+footer {
+  position: relative;
+  top: 5.5rem;
+  z-index: 1;
+  text-align: center;
+  background-color: #212121;
+}
+
+footer p {
+  color: white;
+}
+
+/* media fonts */
+@media only screen and (max-width: 550px) {
+  .mission h1,
+  .team-container h2,
+  .differential-container h2 {
+    font-size: 2rem;
+  }
+  .mission p {
+    font-size: 1rem;
+  }
+  .main,
+  footer {
+    top: 1.5rem;
+  }
+}
