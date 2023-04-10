@@ -1,0 +1,79 @@
+body {
+  font-family: 'Cardo', serif;
+  background-color: #d7dfc3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 50px 1fr 3fr;
+}
+
+.pageTitle {
+  grid-area: 2 / 2;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  color: #340a0b;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: 3 / 2;
+}
+
+.botaoJogar {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.8rem 2.5rem;
+  border: 3px double #340a0b;
+  background-color: #e8c382;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.botaoJogar:hover {
+  background-color: #c4af7f;
+  transition: 0.3s;
+}
+
+.details {
+  text-align: center;
+  background-color: #a86b4c;
+  padding: 3rem 2rem;
+  border: 6px double #7d1a0c;
+  width: 60%;
+}
+
+.nomeDeus {
+  font-weight: 700;
+}
+
+.qualidadeDeus {
+  font-size: 1.2rem;
+}
+
+.fraseDeus {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.fraseDeus::after {
+  content: '”';
+  margin-left: 2px;
+}
+
+.fraseDeus::before {
+  content: '“';
+  margin-right: 2px;
+}
+
+.fraseDeus::after,
+.fraseDeus::before {
+  font-size: 1.5rem;
+  color: #340a0b;
+}
